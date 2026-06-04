@@ -1,6 +1,6 @@
 /*
   Genesis Light scripture content and learning prompts.
-  This file contains the verse metadata and learning items for Genesis 1:1-5.
+  This file contains the verse metadata and learning items for Genesis 1:1 to 5.
 */
 
 const APP_DATA = {
@@ -10,7 +10,7 @@ const APP_DATA = {
       reference: 'Genesis 1:1',
       title: 'Creator of All',
       verseText: 'In the beginning God created the heavens and the earth.',
-      explanation: 'Before anything existed—before people, animals, trees, stars, or even the sky—God was already there. God made everything from nothing.',
+      explanation: 'Before anything existed, before people, animals, trees, stars, or even the sky, God was already there. God made everything from nothing.',
       simpleMeaning: 'God is the Creator of everything.',
       fillBlank: {
         prompt: 'In the ______ God created the heavens and the ______.',
@@ -137,7 +137,7 @@ const APP_DATA = {
       id: 5,
       reference: 'Genesis 1:5',
       title: 'Purpose & Identity',
-      verseText: 'God called the light "day," and the darkness he called "night." And there was evening, and there was morning—the first day.',
+      verseText: 'God called the light "day," and the darkness he called "night." And there was evening, and there was morning, the first day.',
       explanation: 'God gave names and purpose to what He created.',
       simpleMeaning: 'God gives purpose and identity.',
       fillBlank: {
@@ -163,7 +163,7 @@ const APP_DATA = {
         correct: 2,
       },
       ownWordsPrompt: 'Explain Genesis 1:5 in your own words.',
-      memoryText: 'God called the light "day," and the darkness he called "night." And there was evening, and there was morning—the first day.',
+      memoryText: 'God called the light "day," and the darkness he called "night." And there was evening, and there was morning, the first day.',
     },
   ],
 };

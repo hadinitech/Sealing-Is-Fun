@@ -11,9 +11,9 @@ const CompletionScreen = {
       <section class="completion-shell">
         <section class="completion-hero card">
           <div class="completion-hero-copy">
-            <div class="completion-badge">Genesis 1:1-5 Mastered</div>
+            <div class="completion-badge">Genesis 1:1 to 5 Mastered</div>
             <h1 class="heading-xl">Learned. Understood. Remembered.</h1>
-            <p>You have completed the full Genesis Light Scripture journey and carried Genesis 1:1-5 all the way from reading to remembrance.</p>
+            <p>You have completed the full Genesis Light Scripture journey and carried Genesis 1:1 to 5 all the way from reading to remembrance.</p>
             <div class="completion-divider" aria-hidden="true"></div>
           </div>
           <div class="completion-hero-art">

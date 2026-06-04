@@ -64,7 +64,7 @@ const HomeScreen = {
             </div>
             <aside class="home-status">
               <div class="home-status-header">
-                <strong>Genesis 1:1-5 Progress</strong>
+                <strong>Genesis 1:1 to 5 Progress</strong>
                 <span class="progress-counter">${completeText}</span>
               </div>
               <div class="progress-ring" style="--progress: ${progressPercent};">
@@ -83,7 +83,7 @@ const HomeScreen = {
           <div class="section-intro">
             <div class="section-kicker">Scripture Journey</div>
             <h2 class="heading-md">Choose a Verse to Begin</h2>
-            <p>Each verse has a step-by-step journey to help you learn, understand, and remember.</p>
+            <p>Each verse has a step by step journey to help you learn, understand, and remember.</p>
           </div>
           <div class="home-cards">${cards}</div>
         </section>

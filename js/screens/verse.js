@@ -35,99 +35,29 @@ const VerseScreen = {
     return Math.round((this.progress.completedSteps.length / this.steps.length) * 100);
   },
 
-  isStepCompleted(index) {
-    return this.progress.completedSteps.includes(this.steps[index].key);
-  },
-
-  isStepUnlocked(index) {
-    return index <= this.currentStepIndex;
-  },
-
-  getStepState(index) {
-    if (this.isStepCompleted(index)) {
-      return 'completed';
-    }
-
-    if (index === this.currentStepIndex) {
-      return 'current';
-    }
-
-    if (this.isStepUnlocked(index)) {
-      return 'available';
-    }
-
-    return 'locked';
-  },
-
-  getStepStatusLabel(index) {
-    const state = this.getStepState(index);
-    if (state === 'completed') {
-      return 'Completed';
-    }
-
-    if (state === 'current') {
-      return 'Current step';
-    }
-
-    if (state === 'available') {
-      return 'Ready to review';
-    }
-
-    return 'Unlock by finishing the earlier steps';
-  },
-
-  getDisplayedStep() {
-    return this.steps[this.viewStepIndex];
-  },
-
   getCurrentStep() {
     return this.steps[this.currentStepIndex];
-  },
-
-  jumpToCurrentStep() {
-    this.viewStepIndex = this.currentStepIndex;
-  },
-
-  moveView(offset) {
-    const nextIndex = this.viewStepIndex + offset;
-    if (nextIndex < 0 || nextIndex > this.currentStepIndex) {
-      return false;
-    }
-
-    this.viewStepIndex = nextIndex;
-    return true;
   },
 
   render(container, verseData) {
     this.verseData = verseData;
     this.progress = StorageHelper.getVerseProgress(verseData.id);
     this.currentStepIndex = this.getActiveStepIndex();
-
-    if (typeof this.viewStepIndex !== 'number' || this.viewStepIndex > this.currentStepIndex || this.viewStepIndex < 0) {
-      this.viewStepIndex = this.currentStepIndex;
-    }
-
-    const displayedStep = this.getDisplayedStep();
+    const displayedStep = this.getCurrentStep();
     const completionPercent = this.getCompletionPercent();
     const completedSteps = this.progress.completedSteps.length;
-    const isViewingCurrentStep = this.viewStepIndex === this.currentStepIndex;
 
     container.innerHTML = `
       <section class="verse-shell">
         <article class="verse-hero card">
           <div class="verse-topbar">
             <button class="button-secondary back-home" type="button">Back to home</button>
-            <div class="step-indicator">Step ${Math.min(this.currentStepIndex + 1, this.steps.length)} of ${this.steps.length}</div>
           </div>
           <div class="verse-hero-grid">
             <div class="verse-copy">
               <span class="verse-reference">${verseData.reference}</span>
               <h1 class="heading-md">${verseData.title}</h1>
               <p class="verse-text">${verseData.verseText}</p>
-              <div class="verse-progress-inline">
-                <span>${completedSteps}/${this.steps.length} steps complete</span>
-                <div class="progress-bar"><div class="progress-fill" style="width: ${completionPercent}%"></div></div>
-              </div>
             </div>
             <aside class="verse-progress-panel">
               <div class="verse-progress-badge">Verse Progress</div>
@@ -142,27 +72,13 @@ const VerseScreen = {
           <article class="step-stage card-soft card">
             <div class="step-stage-header">
               <div>
-                <span class="step-stage-kicker">${isViewingCurrentStep ? 'Current step' : 'Review step'}</span>
-                <h2>${this.viewStepIndex + 1}. ${displayedStep.label}</h2>
+                <span class="step-stage-kicker">Current step</span>
+                <h2>${this.currentStepIndex + 1}. ${displayedStep.label}</h2>
                 <p>${displayedStep.helper}</p>
               </div>
-              ${isViewingCurrentStep ? '' : '<button class="button-secondary jump-current" type="button">Return to current step</button>'}
-            </div>
-            <div class="step-pills" aria-label="Verse steps">
-              ${this.steps.map((step, index) => `
-                <button
-                  class="step-pill ${this.getStepState(index)} ${index === this.viewStepIndex ? 'is-viewing' : ''}"
-                  type="button"
-                  data-step-index="${index}"
-                  ${this.isStepUnlocked(index) ? '' : 'disabled'}
-                >
-                  <span>${index + 1}</span>
-                  <span>${step.label}</span>
-                </button>
-              `).join('')}
             </div>
             <div class="step-stage-body">
-              ${this.getStepContent(displayedStep, isViewingCurrentStep)}
+              ${this.getStepContent(displayedStep)}
             </div>
           </article>
         </section>
@@ -172,18 +88,18 @@ const VerseScreen = {
     this.attachEvents(container);
   },
 
-  getStepContent(step, isCurrentStep) {
-    if (!isCurrentStep) {
-      return this.getReviewContent(step);
-    }
-
+  getStepContent(step) {
     switch (step.key) {
       case 'read':
         return `
           <div class="stage-panel">
-            <p>Read the verse carefully and feel the truth of these words.</p>
+            <div class="stage-verse-card">
+              <span>${this.verseData.reference}</span>
+              <p>${this.verseData.verseText}</p>
+            </div>
+            <p>Take a moment with the verse above, read it slowly, and let the words settle in before moving on.</p>
             <div class="verse-actions">
-              <button class="button-primary step-action" type="button">I have read it</button>
+              <button class="button-primary step-action" type="button">I understand the verse</button>
             </div>
           </div>
         `;
@@ -199,7 +115,7 @@ const VerseScreen = {
               <p>${this.verseData.simpleMeaning}</p>
             </div>
             <div class="verse-actions stage-panel-wide">
-              <button class="button-primary step-action" type="button">I understand</button>
+              <button class="button-primary step-action" type="button">Continue</button>
             </div>
           </div>
         `;
@@ -293,95 +209,6 @@ const VerseScreen = {
     }
   },
 
-  getReviewContent(step) {
-    switch (step.key) {
-      case 'read':
-        return `
-          <div class="review-panel">
-            <p>You already completed the reading step. Revisit the verse above and move forward when you are ready.</p>
-          </div>
-        `;
-      case 'understand':
-        return `
-          <div class="review-panel review-grid">
-            <div class="insight-card">
-              <span>Explanation</span>
-              <p>${this.verseData.explanation}</p>
-            </div>
-            <div class="insight-card">
-              <span>Simple meaning</span>
-              <p>${this.verseData.simpleMeaning}</p>
-            </div>
-          </div>
-        `;
-      case 'fill':
-        return `
-          <div class="review-panel">
-            <p>${this.verseData.fillBlank.prompt}</p>
-            <div class="answer-chip-row">
-              ${this.verseData.fillBlank.answers.map((answer) => `<span class="answer-chip">${answer}</span>`).join('')}
-            </div>
-          </div>
-        `;
-      case 'meaning':
-        return `
-          <div class="review-panel">
-            <p>${this.verseData.meaningQuestion.prompt}</p>
-            <div class="insight-card">
-              <span>Correct answer</span>
-              <p>${this.verseData.meaningQuestion.options[this.verseData.meaningQuestion.correct]}</p>
-            </div>
-          </div>
-        `;
-      case 'wrongTeaching':
-        return `
-          <div class="review-panel">
-            <p>${this.verseData.wrongTeachingQuestion.prompt}</p>
-            <div class="insight-card">
-              <span>Unsupported statement</span>
-              <p>${this.verseData.wrongTeachingQuestion.options[this.verseData.wrongTeachingQuestion.correct]}</p>
-            </div>
-          </div>
-        `;
-      case 'ownWords':
-        return `
-          <div class="review-panel">
-            <div class="insight-card">
-              <span>Your reflection</span>
-              <p>${this.progress.reflection || 'No saved reflection yet.'}</p>
-            </div>
-          </div>
-        `;
-      case 'memoryCheck': {
-        const attempts = this.progress.memoryCheckAttempts || [];
-        const latestAttempt = attempts.length > 0 ? attempts[attempts.length - 1].entered : '';
-        return `
-          <div class="review-panel review-grid">
-            <div class="insight-card">
-              <span>Verse from memory</span>
-              <p>${this.verseData.memoryText}</p>
-            </div>
-            <div class="insight-card">
-              <span>Latest attempt</span>
-              <p>${latestAttempt || 'No attempt has been saved yet.'}</p>
-            </div>
-          </div>
-        `;
-      }
-      case 'mastered':
-        return `
-          <div class="review-panel">
-            <div class="insight-card">
-              <span>Journey complete</span>
-              <p>This verse has already been brought through the full Genesis Light journey.</p>
-            </div>
-          </div>
-        `;
-      default:
-        return '<p>This step is available for review.</p>';
-    }
-  },
-
   rerender(container) {
     this.render(container, this.verseData);
   },
@@ -389,25 +216,6 @@ const VerseScreen = {
   attachEvents(container) {
     const backButton = container.querySelector('.back-home');
     backButton.addEventListener('click', () => Router.navigateBackHome());
-
-    container.querySelectorAll('.step-pill').forEach((button) => {
-      button.addEventListener('click', () => {
-        this.viewStepIndex = Number(button.dataset.stepIndex);
-        this.rerender(container);
-      });
-    });
-
-    const jumpCurrentButton = container.querySelector('.jump-current');
-    if (jumpCurrentButton) {
-      jumpCurrentButton.addEventListener('click', () => {
-        this.jumpToCurrentStep();
-        this.rerender(container);
-      });
-    }
-
-    if (this.viewStepIndex !== this.currentStepIndex) {
-      return;
-    }
 
     const actionButton = container.querySelector('.step-action');
     if (!actionButton) {
@@ -418,7 +226,6 @@ const VerseScreen = {
     if (currentKey === 'read' || currentKey === 'understand') {
       actionButton.addEventListener('click', () => {
         StorageHelper.markStepComplete(this.verseData.id, currentKey);
-        this.viewStepIndex = Math.min(this.currentStepIndex + 1, this.steps.length - 1);
         this.rerender(container);
       });
       return;
@@ -436,7 +243,6 @@ const VerseScreen = {
           feedback.textContent = 'All answers are correct. Well done.';
           feedback.className = 'feedback-message feedback-correct';
           StorageHelper.markStepComplete(this.verseData.id, currentKey);
-          this.viewStepIndex = Math.min(this.currentStepIndex + 1, this.steps.length - 1);
           setTimeout(() => this.rerender(container), 450);
         } else {
           feedback.textContent = 'One or more words need adjustment. Try again.';
@@ -464,7 +270,6 @@ const VerseScreen = {
           feedback.textContent = 'Correct. This meaning reflects the verse well.';
           feedback.className = 'feedback-message feedback-correct';
           StorageHelper.markStepComplete(this.verseData.id, currentKey);
-          this.viewStepIndex = Math.min(this.currentStepIndex + 1, this.steps.length - 1);
           setTimeout(() => this.rerender(container), 450);
         } else {
           feedback.textContent = 'That answer is not supported by the verse. Please review and try again.';
@@ -492,7 +297,6 @@ const VerseScreen = {
           feedback.textContent = 'Correct. That statement is not supported by the verse.';
           feedback.className = 'feedback-message feedback-correct';
           StorageHelper.markStepComplete(this.verseData.id, currentKey);
-          this.viewStepIndex = Math.min(this.currentStepIndex + 1, this.steps.length - 1);
           setTimeout(() => this.rerender(container), 450);
         } else {
           feedback.textContent = 'The chosen statement is supported by the verse. Try again.';
@@ -520,7 +324,6 @@ const VerseScreen = {
         StorageHelper.markStepComplete(this.verseData.id, currentKey);
         feedback.textContent = 'Reflection saved.';
         feedback.className = 'feedback-message feedback-correct';
-        this.viewStepIndex = Math.min(this.currentStepIndex + 1, this.steps.length - 1);
         setTimeout(() => this.rerender(container), 450);
       });
       return;
@@ -537,7 +340,6 @@ const VerseScreen = {
           feedback.textContent = 'Memory check passed. You have remembered the verse.';
           feedback.className = 'feedback-message feedback-correct';
           StorageHelper.markStepComplete(this.verseData.id, currentKey);
-          this.viewStepIndex = Math.min(this.currentStepIndex + 1, this.steps.length - 1);
           setTimeout(() => this.rerender(container), 450);
         } else {
           feedback.textContent = 'The verse is close but not exact yet. Try again from memory.';
