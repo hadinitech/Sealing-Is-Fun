@@ -1,0 +1,210 @@
+:root {
+  color-scheme: light;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background: linear-gradient(180deg, #fff1f6 0%, #fffdfb 36%, #fff7fa 100%);
+  color: #4e1f2f;
+  --bg: #fffdfb;
+  --surface: rgba(255, 253, 251, 0.98);
+  --surface-strong: #fff6f2;
+  --pink-soft: #f8d7e8;
+  --pink-muted: #f4bfd7;
+  --rose: #c23b68;
+  --rose-deep: #9b2f4f;
+  --pink-light: #fff1f6;
+  --text: #4e1f2f;
+  --subtext: #744a57;
+  --gold: #d6b36a;
+  --border: rgba(194, 59, 104, 0.16);
+  --shadow: 0 24px 60px rgba(155, 47, 79, 0.1);
+  --radius: 28px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+img, svg {
+  max-width: 100%;
+  display: block;
+}
+
+button, input, textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(214, 179, 106, 0.45);
+  outline-offset: 2px;
+}
+
+.page-shell {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.app-shell {
+  width: 100%;
+}
+
+.heading-xl {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.8rem, 6vw, 6rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+.heading-md {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3.6vw, 3.35rem);
+  margin: 0;
+}
+
+.text-muted {
+  color: var(--subtext);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.card-soft {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 241, 246, 0.96));
+}
+
+.button-primary,
+.button-secondary,
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 20px;
+  font-weight: 600;
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.button-primary {
+  background: linear-gradient(135deg, var(--rose-deep) 0%, var(--rose) 100%);
+  color: #fff;
+  box-shadow: 0 14px 28px rgba(155, 47, 79, 0.22);
+}
+
+.button-secondary {
+  background: rgba(255, 253, 251, 0.95);
+  color: var(--rose-deep);
+  border: 1px solid rgba(194, 59, 104, 0.2);
+  box-shadow: 0 10px 22px rgba(155, 47, 79, 0.08);
+}
+
+.button-link {
+  background: transparent;
+  color: var(--text);
+  padding: 0;
+}
+
+.button-primary:hover,
+.button-secondary:hover,
+.button-link:hover {
+  transform: translateY(-2px);
+}
+
+.button-link {
+  text-decoration: underline;
+}
+
+.flex {
+  display: flex;
+  gap: 16px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(248, 215, 232, 0.9);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #f6bfd5 0%, #c23b68 100%);
+  width: 0%;
+  transition: width 320ms ease;
+}
+
+.input-field,
+.textarea-field,
+.select-field {
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgba(78, 59, 59, 0.12);
+  background: #fff;
+  padding: 14px 16px;
+  color: var(--text);
+}
+
+.textarea-field {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.form-control {
+  display: grid;
+  gap: 10px;
+}
+
+.status-pill {
+  display: inline-flex;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  background: rgba(214, 179, 106, 0.12);
+  color: #5a3f2f;
+}
