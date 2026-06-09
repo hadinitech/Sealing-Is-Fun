@@ -164,7 +164,9 @@
 }
 
 .stage-panel-split {
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 520px));
+  justify-content: start;
+  align-items: start;
 }
 
 .stage-verse-card {

@@ -11,13 +11,13 @@ const CompletionScreen = {
       <section class="completion-shell">
         <section class="completion-hero card">
           <div class="completion-hero-copy">
-            <div class="completion-badge">Genesis 1:1 to 5 Mastered</div>
+            <div class="completion-badge">Revelation 5:1 to 8 Mastered</div>
             <h1 class="heading-xl">Learned. Understood. Remembered.</h1>
-            <p>You have completed the full Genesis Light Scripture journey and carried Genesis 1:1 to 5 all the way from reading to remembrance.</p>
+            <p>You have completed the full The Scroll and the Lamb Scripture journey and carried Revelation 5:1 to 8 all the way from reading to remembrance.</p>
             <div class="completion-divider" aria-hidden="true"></div>
           </div>
           <div class="completion-hero-art">
-            <img src="assets/images/Hero Bunny.png" alt="Genesis Light bunny celebrating completion." />
+            <img src="assets/images/Hero Bunny.png" alt="The Scroll and the Lamb bunny celebrating completion." />
           </div>
         </section>
 
@@ -38,13 +38,13 @@ const CompletionScreen = {
             </article>
             <article class="completion-stat card">
               <span>Scripture Focus</span>
-              <strong>Genesis 1</strong>
+              <strong>Revelation 5</strong>
             </article>
           </div>
 
           <article class="completion-quote card">
-            <blockquote>"Your word is a lamp to my feet and a light to my path."</blockquote>
-            <p>Psalm 119:105</p>
+            <blockquote>"Then I heard the number of those who were sealed: 144,000 from all the tribes of Israel."</blockquote>
+            <p>Revelation 7:4</p>
           </article>
         </section>
 

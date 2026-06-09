@@ -51,20 +51,20 @@ const HomeScreen = {
             <div class="hero-copy">
               <div class="hero-brand">
                 <img src="assets/images/Logo.png" alt="" />
-                <span>Genesis Light</span>
+                <span>The Scroll and the Lamb</span>
               </div>
               <div class="hero-copy-main">
-                <h1 class="heading-xl">Genesis Light</h1>
+                <h1 class="heading-xl">The Scroll and the Lamb</h1>
                 <p class="hero-subtitle">Learn Scripture.<br />Understand Scripture.<br />Remember Scripture.</p>
                 <div class="hero-gold-line" aria-hidden="true"></div>
               </div>
             </div>
             <div class="hero-visual">
-              <img class="hero-bunny" src="assets/images/Hero Bunny.png" alt="Genesis Light bunny mascot holding Scripture." />
+              <img class="hero-bunny" src="assets/images/Hero Bunny.png" alt="The Scroll and the Lamb bunny mascot holding Scripture." />
             </div>
             <aside class="home-status">
               <div class="home-status-header">
-                <strong>Genesis 1:1 to 5 Progress</strong>
+                <strong>Revelation 5:1 to 8 Progress</strong>
                 <span class="progress-counter">${completeText}</span>
               </div>
               <div class="progress-ring" style="--progress: ${progressPercent};">
@@ -91,8 +91,8 @@ const HomeScreen = {
           <div class="quote-card">
             <img class="quote-bunny" src="assets/images/Hero Bunny.png" alt="" />
             <div class="quote-content">
-              <blockquote>"Your word is a lamp to my feet and a light to my path."</blockquote>
-              <p>Psalm 119:105</p>
+              <blockquote>"Then I heard the number of those who were sealed: 144,000 from all the tribes of Israel."</blockquote>
+              <p>Revelation 7:4</p>
             </div>
             <div class="quote-paw" aria-hidden="true"></div>
           </div>

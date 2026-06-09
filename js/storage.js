@@ -2,7 +2,7 @@
   Storage utilities for saving and restoring user progress.
 */
 
-const STORAGE_KEY = 'genesisLightProgress';
+const STORAGE_KEY = 'scrollAndLambProgress';
 
 const StorageHelper = {
   getInitialProgress() {
