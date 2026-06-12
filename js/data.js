@@ -138,7 +138,7 @@ const APP_DATA = {
       reference: 'Revelation 5:5',
       title: 'The Lion Has Triumphed',
       verseText: 'Then one of the elders said to me, "Do not weep! See, the Lion of the tribe of Judah, the Root of David, has triumphed. He is able to open the scroll and its seven seals."',
-      explanation: 'The condition for opening the seals and revealing the scroll is to overcome. Jesus stated in John 16:33 that He had overcome the world and, in Matthew 4, that He overcame Satan\'s temptations. Because He overcame, He could reclairna what was taken by the devil and could open the scroll and break its seals. Being victorious means the devil cannot hinder Him.',
+      explanation: 'The condition for opening the seals and revealing the scroll is to overcome. Jesus stated in John 16:33 that He had overcome the world and, in Matthew 4, that He overcame Satan\'s temptations. Because He overcame, He could reclaim what was taken by the devil and could open the scroll and break its seals. Being victorious means the devil cannot hinder Him.',
       simpleMeaning: 'Jesus has triumphed and is able to open the scroll. The phrase "breaking the seals and opening the scroll" means fulfilling what is written inside it. Without overcoming, Satan would interfere, and the prophecy could not be fulfilled.',
       fillBlank: {
         prompt: 'Do not weep! See, ______. He is able to open the scroll and its ______.',
@@ -234,7 +234,7 @@ const APP_DATA = {
       reference: 'Revelation 5:8',
       title: 'Worship and Prayers',
       verseText: 'And when he had taken it, the four living creatures and the twenty-four elders fell down before the Lamb. Each one had a harp and they were holding golden bowls full of incense, which are the prayers of God\'s people.',
-      explanation: 'The twenty-four elders and the four living creatures, who are part of the heavenly host, work alongside Jesus. In John 1:51, the angels of God ascend and descend on the Son of Man, and in Matthew 4, when Jesus overcomes, all the angels minister to Him. In this way, it was not only Jesus working, but the entire heavenly host also worked alongside Him. The incense represents the prayers of the saints. The fire burns, and the smoke rises like incense. Our bodies are the incense burners, and when the fire of the Holy Spirit (Word) is ignited, our hearts burn, and the sound of prayer rises like incense to heaven (indicating prayers ascending to God).',
+      explanation: 'The twenty-four elders and the four living creatures, who are part of the heavenly host, work alongside Jesus. In John 1:51, the angels of God ascend and descend on the Son of Man, and in Matthew 4, when Jesus overcomes, all the angels minister to Him. In this way, it was not only Jesus working, but the entire heavenly host also worked alongside Him. The incense represents the prayers of the saints.',
       simpleMeaning: 'From the moment "the scroll is taken and the work begins," such prayers ascend to God. These become prayers that truly reach heaven and are accepted by God.',
       fillBlank: {
         prompt: 'And when he had taken it, the ______ fell down before the Lamb... golden bowls full of incense, which are ______.',
@@ -261,5 +261,197 @@ const APP_DATA = {
       ownWordsPrompt: 'Explain Revelation 5:8 in your own words.',
       memoryText: 'And when he had taken it, the four living creatures and the twenty-four elders fell down before the Lamb. Each one had a harp and they were holding golden bowls full of incense, which are the prayers of God\'s people.',
     },
-  ],
+    {
+      id: 9,
+      reference: 'Revelation 5:9',
+      title: 'A New Song',
+      verseText: 'And they sang a new song: "You are worthy to take the scroll and to open its seals, because you were slain, and with your blood you purchased men for God from every tribe and language and people and nation."',
+      explanation: 'Through the blood of Jesus, the new song is sung. With His blood, Jesus purchased us to become God\'s kingdom and priests, and these people will become kings. Jesus bore the cross, offering His body in place of our sins.',
+      simpleMeaning: 'The result was purchasing us with His blood to make us into a kingdom and priests. This was done through the new covenant as stated in Luke 22:20.',
+      fillBlank: {
+        prompt: 'And they sang a ( ______ ): "You are worthy... because you were slain, and with your ( ______ ) men for God from every tribe and language and people and nation."',
+        answers: ['new song', 'blood you purchased'],
+      },
+      meaningQuestion: {
+        prompt: 'Which answer best explains this verse?',
+        options: [
+          'The Lamb is worthy because His sacrificial death purchased people for God from every nation.',
+          'The Lamb earned His place by performing miracles throughout the earth.',
+          'Only people from one nation were redeemed by the Lamb.',
+        ],
+        correct: 0,
+      },
+      wrongTeachingQuestion: {
+        prompt: 'Which statement is NOT supported by this verse?',
+        options: [
+          'The Lamb was slain and His blood purchased people for God.',
+          'The new song celebrates the worthiness of the Lamb.',
+          'Only a select tribe was redeemed, not all nations.',
+        ],
+        correct: 2,
+      },
+      ownWordsPrompt: 'Explain Revelation 5:9 in your own words.',
+      memoryText: 'And they sang a new song: "You are worthy to take the scroll and to open its seals, because you were slain, and with your blood you purchased men for God from every tribe and language and people and nation."',
+    },
+    {
+      id: 10,
+      reference: 'Revelation 5:10',
+      title: 'A Kingdom and Priests',
+      verseText: 'You have made them to be a kingdom and priests to serve our God, and they will reign on the earth.',
+      explanation: 'Those redeemed by the Lamb\'s blood are not merely saved God has made them a kingdom and priets.',
+      simpleMeaning: 'The redeemed are made into a kingdom of priests who serve God and will one day reign on the earth.',
+      fillBlank: {
+        prompt: 'You have made them to be a ( ______ ) to serve our God, and they will ( ______ ).',
+        answers: ['kingdom and priests', 'reign on the earth'],
+      },
+      meaningQuestion: {
+        prompt: 'Which answer best explains this verse?',
+        options: [
+          'The redeemed are given an identity as a kingdom and a calling as priests, with a future reign on earth.',
+          'The redeemed are merely forgiven but have no role or purpose.',
+          'Only the elders in heaven will reign, not those on earth.',
+        ],
+        correct: 0,
+      },
+      wrongTeachingQuestion: {
+        prompt: 'Which statement is NOT supported by this verse?',
+        options: [
+          'The redeemed are made to be a kingdom and priests.',
+          'They will reign on the earth.',
+          'The redeemed have no future role and simply wait in heaven.',
+        ],
+        correct: 2,
+      },
+      ownWordsPrompt: 'Explain Revelation 5:10 in your own words.',
+      memoryText: 'You have made them to be a kingdom and priests to serve our God, and they will reign on the earth.',
+    },
+    {
+      id: 11,
+      reference: 'Revelation 5:11',
+      title: 'Thousands of Angels',
+      verseText: 'Then I looked and heard the voice of many angels, numbering thousands upon thousands, and ten thousand times ten thousand. They encircled the throne and the living creatures and the elders.',
+      explanation: '',
+      simpleMeaning: '',
+      fillBlank: {
+        prompt: 'Then I looked and heard the voice of many angels, numbering ( ______ ). They encircled the throne and the living creatures and the elders.',
+        answers: ['thousands upon thousands, and ten thousand times ten thousand'],
+      },
+      meaningQuestion: {
+        prompt: 'Which answer best explains this verse?',
+        options: [
+          'An immeasurable multitude of angels encircles the throne, joining the living creatures and elders in worship.',
+          'Only a small group of angels stood silently at the edge of the throne room.',
+          'The angels replaced the elders and living creatures around the throne.',
+        ],
+        correct: 0,
+      },
+      wrongTeachingQuestion: {
+        prompt: 'Which statement is NOT supported by this verse?',
+        options: [
+          'The angels numbered thousands upon thousands.',
+          'The angels encircled the throne, the living creatures, and the elders.',
+          'There were so few angels that John could count them all easily.',
+        ],
+        correct: 2,
+      },
+      ownWordsPrompt: 'Explain Revelation 5:11 in your own words.',
+      memoryText: 'Then I looked and heard the voice of many angels, numbering thousands upon thousands, and ten thousand times ten thousand. They encircled the throne and the living creatures and the elders.',
+    },
+    {
+      id: 12,
+      reference: 'Revelation 5:12',
+      title: 'Worthy Is the Lamb',
+      verseText: 'In a loud voice they sang: "Worthy is the Lamb, who was slain, to receive power and wealth and wisdom and strength and honor and glory and praise!"',
+      explanation: '',
+      simpleMeaning: '',
+      fillBlank: {
+        prompt: '"Worthy is the Lamb, who was slain, to receive power and wealth and ( ______ ) and honor and glory and praise!"',
+        answers: ['wisdom and strength'],
+      },
+      meaningQuestion: {
+        prompt: 'Which answer best explains this verse?',
+        options: [
+          'The angels proclaim that the slain Lamb deserves all seven attributes of honor, glory, and power.',
+          'The angels sang that the Lamb was too weak to receive any honor.',
+          'Only God the Father, not the Lamb, is worthy to receive praise.',
+        ],
+        correct: 0,
+      },
+      wrongTeachingQuestion: {
+        prompt: 'Which statement is NOT supported by this verse?',
+        options: [
+          'The Lamb is declared worthy because He was slain.',
+          'The angels sang this in a loud voice.',
+          'The Lamb was found unworthy and the angels refused to worship Him.',
+        ],
+        correct: 2,
+      },
+      ownWordsPrompt: 'Explain Revelation 5:12 in your own words.',
+      memoryText: 'In a loud voice they sang: "Worthy is the Lamb, who was slain, to receive power and wealth and wisdom and strength and honor and glory and praise!"',
+    },
+    {
+      id: 13,
+      reference: 'Revelation 5:13',
+      title: 'All Creation Worships',
+      verseText: 'Then I heard every creature in heaven and on earth and under the earth and on the sea, and all that is in them, singing: "To him who sits on the throne and to the Lamb be praise and honor and glory and power, for ever and ever!"',
+      explanation: '',
+      simpleMeaning: '',
+      fillBlank: {
+        prompt: 'Then I heard every creature in heaven and on earth and under the earth and on the ( ______ )... "To him ( ______ ) and to the Lamb be praise and honor and glory and power, for ever and ever!"',
+        answers: ['sea', 'who sits on the throne'],
+      },
+      meaningQuestion: {
+        prompt: 'Which answer best explains this verse?',
+        options: [
+          'Every creature in all realms of creation joins in eternal worship of both God and the Lamb.',
+          'Only heavenly creatures worship; those on earth remain silent.',
+          'Creation worships only the Father and ignores the Lamb.',
+        ],
+        correct: 0,
+      },
+      wrongTeachingQuestion: {
+        prompt: 'Which statement is NOT supported by this verse?',
+        options: [
+          'Creatures in heaven, on earth, under the earth, and on the sea all sing.',
+          'Praise is given to both the one on the throne and the Lamb.',
+          'Only a portion of creation worships; the rest rebel against the throne.',
+        ],
+        correct: 2,
+      },
+      ownWordsPrompt: 'Explain Revelation 5:13 in your own words.',
+      memoryText: 'Then I heard every creature in heaven and on earth and under the earth and on the sea, and all that is in them, singing: "To him who sits on the throne and to the Lamb be praise and honor and glory and power, for ever and ever!"',
+    },
+    {
+      id: 14,
+      reference: 'Revelation 5:14',
+      title: 'Amen and Worship',
+      verseText: 'The four living creatures said, "Amen," and the elders fell down and worshiped.',
+      explanation: '',
+      simpleMeaning: '',
+      fillBlank: {
+        prompt: 'The four living creatures said, "Amen," and the elders fell down and ( ______ ).',
+        answers: ['worshiped'],
+      },
+      meaningQuestion: {
+        prompt: 'Which answer best explains this verse?',
+        options: [
+          'The living creatures confirm the worship with "Amen," and the elders respond with reverent prostration.',
+          'The elders disagreed with the living creatures and left the throne room.',
+          'The "Amen" signaled that worship was over and everyone went home.',
+        ],
+        correct: 0,
+      },
+      wrongTeachingQuestion: {
+        prompt: 'Which statement is NOT supported by this verse?',
+        options: [
+          'The four living creatures said "Amen."',
+          'The elders fell down and worshiped.',
+          'The elders refused to worship after the living creatures spoke.',
+        ],
+        correct: 2,
+      },
+      ownWordsPrompt: 'Explain Revelation 5:14 in your own words.',
+      memoryText: 'The four living creatures said, "Amen," and the elders fell down and worshiped.',
+    }
+  ]
 };
