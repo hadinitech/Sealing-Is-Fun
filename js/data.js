@@ -11,7 +11,7 @@ const APP_DATA = {
     sections: [
       {
         verseLabel: 'Verse 1',
-        verseText: 'The Revelation of Jesus Christ, which God gave unto him, to shew unto his servants things which must shortly come to pass; and he sent and signified it by his angel unto his servant John:',
+        verseText: 'The revelation from Jesus Christ, which God gave him to show his servants what must soon take place. He made it known by sending his angel to his servant John',
         explanations: [
           'The word "Revelation" means to open and show. It is called the Revelation of Jesus Christ because Jesus opens the sealed book and shows it.',
           'Jesus, who prophesied Revelation, has come today to fulfill the revelation and reveal the realities of the fulfilled prophecy to New John. This is the physical fulfilment revelation.',
@@ -22,7 +22,7 @@ const APP_DATA = {
       },
       {
         verseLabel: 'Verse 2',
-        verseText: 'Who bare record of the word of God, and of the testimony of Jesus Christ, and of all things that he saw.',
+        verseText: 'who testifies to everything he saw—that is, the word of God and the testimony of Jesus Christ.',
         explanations: [
           'John testifies the Word of God and all the things that he has seen.',
           'The "Word of God" proclaimed by John is the word of the open book that he received and ate in Revelation 10.',
@@ -33,7 +33,7 @@ const APP_DATA = {
       },
       {
         verseLabel: 'Verse 3',
-        verseText: 'Blessed is he that readeth, and they that hear the words of this prophecy, and keep those things which are written therein: for the time is at hand.',
+        verseText: 'Blessed is the one who reads aloud the words of this prophecy, and blessed are those who hear it and take to heart what is written in it, because the time is near.',
         explanations: [
           '"The one who reads" is the person who has mastered the Book of Revelation and is the only person, New John, who ate the open book in Revelation 10.',
           '"Those who hear it" are the peoples, nations, languages, and kings who receive the testimony from New John, that is, all churches and church members under sin in Revelation 10:11.',
@@ -44,7 +44,7 @@ const APP_DATA = {
       },
       {
         verseLabel: 'Verse 4',
-        verseText: 'John to the seven churches which are in Asia: Grace be unto you, and peace, from him which is, and which was, and which is to come; and from the seven Spirits which are before his throne;',
+        verseText: 'John, To the seven churches in the province of Asia: Grace and peace to you from him who is, and who was, and who is to come, and from the seven spirits before his throne,',
         explanations: [
           'John writes letters to the seven churches in Asia, which refers to the letters in Revelation 2-3.',
           'The Seven Messengers of the Seven Churches were parables of the Seven Golden Lampstands and Seven Stars in Revelation 1:20, and this was a secret.',
@@ -55,7 +55,7 @@ const APP_DATA = {
       },
       {
         verseLabel: 'Verse 5',
-        verseText: 'And from Jesus Christ, who is the faithful witness, and the first begotten of the dead, and the prince of the kings of the earth. Unto him that loved us, and washed us from our sins in his own blood,',
+        verseText: 'and from Jesus Christ, who is the faithful witness, the firstborn from the dead, and the ruler of the kings of the earth. To him who loves us and has freed us from our sins by his blood, ',
         explanations: [
           'Those "freed from sin by the blood of Jesus" are the ones who, in Revelation 5:9-10, have been redeemed by the blood of Jesus to become the kingdom and priests for God.',
           'Their reality is revealed in the fulfilment of Revelation as those born of God\'s seed and harvested as the 144,000 of God\'s new kingdom of the 12 tribes.',
@@ -66,7 +66,7 @@ const APP_DATA = {
       },
       {
         verseLabel: 'Verse 6',
-        verseText: 'And hath made us kings and priests unto God and his Father; to him be glory and dominion for ever and ever. Amen.',
+        verseText: 'and has made us to be a kingdom and priests to serve his God and Father—to him be glory and power for ever and ever! Amen. ',
         explanations: [
           'Those redeemed by the blood of Jesus are made into a kingdom and priests for God.',
           'Their reality is the 144,000 of God\'s new kingdom and the 12 tribes revealed in the fulfilment of Revelation.',
@@ -77,7 +77,7 @@ const APP_DATA = {
       },
       {
         verseLabel: 'Verse 7',
-        verseText: 'Behold, he cometh with clouds; and every eye shall see him, and they also which pierced him: and all kindreds of the earth shall wail because of him. Even so, Amen.',
+        verseText: '“Look, he is coming with the clouds,” and “every eye will see him, even those who pierced him”; and all peoples on earth “will mourn because of him.” So shall it be! Amen. ',
         explanations: [
           'Jesus coming "with the clouds" signifies His arrival in a spiritual, invisible form.',
           'Those who "pierced" Jesus refer to those who persecuted the two witnesses chosen in Revelation 11.',
@@ -88,7 +88,7 @@ const APP_DATA = {
       },
       {
         verseLabel: 'Verse 8',
-        verseText: 'I am Alpha and Omega, the beginning and the ending, saith the Lord, which is, and which was, and which is to come, the Almighty.',
+        verseText: '“I am the Alpha and the Omega,” says the Lord God, “who is, and who was, and who is to come, the Almighty."',
         explanations: [
           'God is referred to as the "Alpha and Omega, the one who is to come." Alpha and Omega signify the beginning and the end.',
           'This means God, who began the work of restoration after Adam\'s fall, fulfills all things through the Book of Revelation.',
