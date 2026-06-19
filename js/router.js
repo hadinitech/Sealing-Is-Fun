@@ -8,7 +8,49 @@ const Router = {
 
   init() {
     this.appElement = document.getElementById('app');
+    this.showWelcome();
+  },
+
+  showWelcome() {
+    this.currentVerse = null;
+    this.appElement.innerHTML = '';
+    WelcomeScreen.render(this.appElement);
+  },
+
+  startSealingExam() {
+    const progress = StorageHelper.loadProgress();
+    const completedCount = Object.values(progress.verses).filter((verse) => verse.completedSteps.length >= 8).length;
+
+    if (completedCount >= APP_DATA.verses.length) {
+      this.showCompletion();
+      return;
+    }
+
     this.showHome();
+  },
+
+  showRevelationSealing() {
+    this.currentVerse = null;
+    this.appElement.innerHTML = '';
+    WelcomeScreen.renderRevelationPreview(this.appElement);
+  },
+
+  showRevelationStudy(sectionIndex = 0) {
+    this.currentVerse = null;
+    this.appElement.innerHTML = '';
+    RevelationStudyScreen.render(this.appElement, APP_DATA.revelationStudy, sectionIndex);
+  },
+
+  showRevelationMemory(sectionIndex = 0, stepIndex = 0) {
+    this.currentVerse = null;
+    this.appElement.innerHTML = '';
+    RevelationMemoryScreen.render(this.appElement, APP_DATA.revelationStudy, sectionIndex, stepIndex);
+  },
+
+  showRevelationTest() {
+    this.currentVerse = null;
+    this.appElement.innerHTML = '';
+    RevelationTestScreen.render(this.appElement, APP_DATA.revelationTest);
   },
 
   showHome() {

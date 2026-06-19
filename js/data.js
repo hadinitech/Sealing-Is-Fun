@@ -4,6 +4,225 @@
 */
 
 const APP_DATA = {
+  revelationStudy: {
+    title: 'REVELATION 1:1-8',
+    titleOfTitle: 'The Summary and Conclusion of the Entire Book of Revelation',
+    summary: 'The Revelation of Jesus is delivered to the servants according to order: God, Jesus, the angel, and New John. What must soon take place are the events of the entire Book of Revelation. New John is the messenger of Jesus who testifies to what he has seen and heard about the events of the entire book of Revelation at the time of its fulfilment. This Book of Revelation is God\'s New Covenant, a book of prophecy that contains the completion of all of God\'s work over 6,000 years. The 65 books of the Bible are the tree and the Book of Revelation is the fruit, and God\'s purpose and objective will be fulfilled through the fulfillment of the Book of Revelation.',
+    sections: [
+      {
+        verseLabel: 'Verse 1',
+        verseText: 'The Revelation of Jesus Christ, which God gave unto him, to shew unto his servants things which must shortly come to pass; and he sent and signified it by his angel unto his servant John:',
+        explanations: [
+          'The word "Revelation" means to open and show. It is called the Revelation of Jesus Christ because Jesus opens the sealed book and shows it.',
+          'Jesus, who prophesied Revelation, has come today to fulfill the revelation and reveal the realities of the fulfilled prophecy to New John. This is the physical fulfilment revelation.',
+          'Jesus showed his disciple John the vision revelation 2,000 years ago, and New John is shown the physical fulfilment of Revelation today.',
+          'Revelation 1:1 describes the process of how the physical fulfilment revelation is delivered at the time of fulfilment: God, Jesus, the angel, and John.',
+          'At the time of fulfillment, the servants of God receive the open book, the revealed word, from New John. These servants are the 144,000 from the 12 tribes of the new kingdom of God and the great multitude in white in Revelation 7.',
+        ],
+      },
+      {
+        verseLabel: 'Verse 2',
+        verseText: 'Who bare record of the word of God, and of the testimony of Jesus Christ, and of all things that he saw.',
+        explanations: [
+          'John testifies the Word of God and all the things that he has seen.',
+          'The "Word of God" proclaimed by John is the word of the open book that he received and ate in Revelation 10.',
+          'Just as Jesus received the scroll of Ezekiel 3 at the First Coming and proclaimed it to the rebellious house of Israel, New John receives and eats the open book from an angel in Revelation 10.',
+          'After receiving the open book, New John proclaims it to the churches.',
+          'The testimony of Jesus Christ refers to what he has seen: the realities of the fulfilment of Revelation.',
+        ],
+      },
+      {
+        verseLabel: 'Verse 3',
+        verseText: 'Blessed is he that readeth, and they that hear the words of this prophecy, and keep those things which are written therein: for the time is at hand.',
+        explanations: [
+          '"The one who reads" is the person who has mastered the Book of Revelation and is the only person, New John, who ate the open book in Revelation 10.',
+          '"Those who hear it" are the peoples, nations, languages, and kings who receive the testimony from New John, that is, all churches and church members under sin in Revelation 10:11.',
+          '"Those who take to heart" include New John, the 12 tribes, the 144,000, and the Great Multitude in white in Revelation 7.',
+          'When Revelation is fulfilled, those who realize the reality of Revelation, believe, and keep it will receive the blessings of heaven and eternal life.',
+          'The blessing is connected to hearing, believing, and keeping what is written at the time of fulfilment.',
+        ],
+      },
+      {
+        verseLabel: 'Verse 4',
+        verseText: 'John to the seven churches which are in Asia: Grace be unto you, and peace, from him which is, and which was, and which is to come; and from the seven Spirits which are before his throne;',
+        explanations: [
+          'John writes letters to the seven churches in Asia, which refers to the letters in Revelation 2-3.',
+          'The Seven Messengers of the Seven Churches were parables of the Seven Golden Lampstands and Seven Stars in Revelation 1:20, and this was a secret.',
+          'The seven churches were not simply the historical seven churches in Asia at that time, but figuratively the temple of the Seven Golden Lampstands that prepares the way at the time of the Second Coming.',
+          'In reality, writing to the seven churches is accomplished by sending letters to the Seven Messengers of the Seven Churches, that is, the temple that prepares the way at the time of the Second Coming.',
+          'This is fulfilled when the Temple of the Seven Golden Lampstands appears, as prophesied in the Book of Revelation.',
+        ],
+      },
+      {
+        verseLabel: 'Verse 5',
+        verseText: 'And from Jesus Christ, who is the faithful witness, and the first begotten of the dead, and the prince of the kings of the earth. Unto him that loved us, and washed us from our sins in his own blood,',
+        explanations: [
+          'Those "freed from sin by the blood of Jesus" are the ones who, in Revelation 5:9-10, have been redeemed by the blood of Jesus to become the kingdom and priests for God.',
+          'Their reality is revealed in the fulfilment of Revelation as those born of God\'s seed and harvested as the 144,000 of God\'s new kingdom of the 12 tribes.',
+          'The effect of Jesus\' blood, which forgives sins, takes effect to these people during the fulfilment of Revelation at the time of the Second Coming.',
+          'Jesus is presented as the faithful witness and the one through whom this redemptive work is fulfilled.',
+          'This verse points to the people who actually receive the effect of Jesus\' blood in the time of fulfilment.',
+        ],
+      },
+      {
+        verseLabel: 'Verse 6',
+        verseText: 'And hath made us kings and priests unto God and his Father; to him be glory and dominion for ever and ever. Amen.',
+        explanations: [
+          'Those redeemed by the blood of Jesus are made into a kingdom and priests for God.',
+          'Their reality is the 144,000 of God\'s new kingdom and the 12 tribes revealed in the fulfilment of Revelation.',
+          'This is not only a spiritual statement but a fulfilled reality at the time of the Second Coming.',
+          'The work of making people into a kingdom and priests is connected with God\'s long-awaited purpose in Revelation.',
+          'To God and to the fulfilled work belong glory and dominion forever and ever.',
+        ],
+      },
+      {
+        verseLabel: 'Verse 7',
+        verseText: 'Behold, he cometh with clouds; and every eye shall see him, and they also which pierced him: and all kindreds of the earth shall wail because of him. Even so, Amen.',
+        explanations: [
+          'Jesus coming "with the clouds" signifies His arrival in a spiritual, invisible form.',
+          'Those who "pierced" Jesus refer to those who persecuted the two witnesses chosen in Revelation 11.',
+          'They are the pastors of the beast that came up from the abyss and the congregation of the tabernacle temple who persecuted.',
+          'All kindreds of the earth wailing points to the reaction when this reality is revealed at the time of fulfilment.',
+          'This verse speaks about the revealed reality of Jesus\' coming, persecution, and judgment.',
+        ],
+      },
+      {
+        verseLabel: 'Verse 8',
+        verseText: 'I am Alpha and Omega, the beginning and the ending, saith the Lord, which is, and which was, and which is to come, the Almighty.',
+        explanations: [
+          'God is referred to as the "Alpha and Omega, the one who is to come." Alpha and Omega signify the beginning and the end.',
+          'This means God, who began the work of restoration after Adam\'s fall, fulfills all things through the Book of Revelation.',
+          'The phrase "the one who is to come" signifies the announcement of God and the heavenly kingdom descending to the one who overcomes.',
+          'It also points to new heaven and new earth, the 12 tribes, as seen in Revelation 3:12 and Revelation 21.',
+          'The conclusion is that God completes His purpose through the fulfilment of Revelation from beginning to end.',
+        ],
+      },
+    ],
+  },
+  revelationTest: {
+    title: 'REVELATION SEALING TEST',
+    intro: 'Use this test section to review the sealing material and write the answers carefully.',
+    questions: [
+      {
+        number: 1,
+        prompt: '①What are the two kinds of revelation God gives, and between the two, ②which one is the one that God’s servants must receive at the time of the fulfilment of Revelation? ③Write from whom this revelation must be received.',
+        answer: [
+          '① Prophetic vision revelation, reality revelation',
+          '② Reality revelation',
+          '③ The Promised Shepherd, the One Who Overcomes, New John',
+        ],
+      },
+      {
+        number: 2,
+        prompt: '①Through whose appearance does the fulfilment of Revelation begin? Include a reference. Regarding the beginning of the fulfillment of this work of Revelation, write ②when and ③where it was fulfilled as the actual reality.',
+        answer: [
+          '① Jesus of the second coming, Rv 1, 2, 3',
+          '② 1966',
+          '③ Tabernacle Temple in Gwacheon, at the base of Mt. Cheonggye',
+        ],
+      },
+      {
+        number: 3,
+        prompt: 'In Rv 1:2, what are ①the word of God that John testifies to, and ②the testimony of Jesus—that is, what he saw?',
+        answer: [
+          '① The word of the opened book that he received and ate in Rev 10',
+          '② The fulfilled realities of the entire book of Revelation',
+        ],
+      },
+      {
+        number: 4,
+        prompt: 'In Rv 1:3, who is 1. "the one who reads," 2. "those who hear," and 3. "those who keep"? Write the answer along with the applicable chapter (reference verse) of Revelation, respectively.',
+        answer: [
+          '1. New John who received and ate the opened book, Rv 10',
+          '2. Peoples, nations, languages, and kings who learn from New John, Rv 10:11',
+          '3. Including New John, the 12 tribes, the 144,000 and the multitude in white, Rv 7',
+        ],
+      },
+      {
+        number: 5,
+        prompt: 'In Rev 1:5–6, ①when and ②to whom does the effect of Jesus’ blood apply? Write with supporting scripture references.',
+        answer: [
+          '① When: At the time of the fulfillment of Revelation',
+          '② To whom (with references): The 12 tribes—the 144,000 and the great multitude in white, Rv 5:9–10, Rv 1:5–6, Rv 7:14',
+        ],
+      },
+      {
+        number: 6,
+        prompt: 'Write the reason why Revelation is the most important along with a reference verse.',
+        answer: [
+          'Rv 22:18~19, Because if one adds to or subtracts from Revelation, one cannot enter heaven and will receive curses (plagues).',
+        ],
+      },
+      {
+        number: 7,
+        prompt: 'When does one come to know the true meaning of prophecy?',
+        answer: [
+          'When the prophecy is fulfilled and the reality appears.',
+        ],
+      },
+      {
+        number: 8,
+        prompt: 'In Rv 1:2, ①what does New John testify to the servants about today, ②where does he testify, and ③why is it testified there?',
+        answer: [
+          '① The unprecedented realities of Revelation',
+          '② Shincheonji',
+          '③ Because there is the shepherd who saw and heard at the site of fulfillment.',
+        ],
+      },
+      {
+        number: 9,
+        prompt: 'What is the purpose God has had throughout the 6,000 years of history?',
+        answer: [
+          'The creation of the 12 tribes, sealed 144,000 of Rv 7',
+        ],
+      },
+      {
+        number: 10,
+        prompt: '① Who must keep the promises of the New Testament Revelation (the ones to whom the promise is made), and ②what blessings do those who keep the promise receive?',
+        answer: [
+          '① People who live at the time of fulfilment of the Book of Revelation',
+          '② Heaven and eternal life, and of becoming a kingdom and priests',
+        ],
+      },
+      {
+        number: 11,
+        prompt: 'Who am I according to the Bible? Write down with Bible chapter references.',
+        answer: [
+          'I am the reality of the firstfruit in Rv 14 during the era of fulfilling Revelation, born of God’s seed, harvested, and sealed to belong to the 12 tribes in Rv 7',
+        ],
+      },
+      {
+        number: 12,
+        prompt: 'What is the proof that I have truly been created according to the Bible?',
+        answer: [
+          'Harvested, sealed, and belong to the 12 tribes of Rv 7',
+        ],
+      },
+      {
+        number: 13,
+        prompt: '① Where was Jesus from (where did He live)? ② What kind of place was that town? And ③What did Jesus receive from the shepherds of the first coming as a result?',
+        answer: [
+          '① Nazareth',
+          '② A poor village',
+          '③ Contempt, scorn, and persecution',
+        ],
+      },
+      {
+        number: 14,
+        prompt: 'Who gave birth to the 12 tribes of Shincheonji, and with what?',
+        answer: [
+          'God, with the word of God.',
+        ],
+      },
+      {
+        number: 15,
+        prompt: 'In Jn 8:58, what does it mean that Jesus said he existed before Abraham?',
+        answer: [
+          'It means he existed as an intangible spirit.',
+        ],
+      },
+    ],
+  },
   verses: [
     {
       id: 1,
